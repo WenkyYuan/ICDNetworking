@@ -13,6 +13,7 @@
 		26DDD22D1C47885400D21F83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26DDD22B1C47885400D21F83 /* Main.storyboard */; };
 		26DDD22F1C47885400D21F83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26DDD22E1C47885400D21F83 /* Assets.xcassets */; };
 		26DDD2321C47885400D21F83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26DDD2301C47885400D21F83 /* LaunchScreen.storyboard */; };
+		FD4F33242B53F9F290562D1A /* libPods-ICDNetworkingDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D634D35696516AD0D7C5D6E /* libPods-ICDNetworkingDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		26DDD22E1C47885400D21F83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26DDD2311C47885400D21F83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26DDD2331C47885400D21F83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D634D35696516AD0D7C5D6E /* libPods-ICDNetworkingDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ICDNetworkingDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E76156D328A4D1CF487BCD /* Pods-ICDNetworkingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICDNetworkingDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ICDNetworkingDemo/Pods-ICDNetworkingDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E1E981FA4FAD8881A345A794 /* Pods-ICDNetworkingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICDNetworkingDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ICDNetworkingDemo/Pods-ICDNetworkingDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD4F33242B53F9F290562D1A /* libPods-ICDNetworkingDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				26DDD2211C47885400D21F83 /* ICDNetworkingDemo */,
 				26DDD2201C47885400D21F83 /* Products */,
+				76025BC7ACAA7B3746604C19 /* Pods */,
+				BAD62D725518EDAA6D43C912 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		76025BC7ACAA7B3746604C19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1E981FA4FAD8881A345A794 /* Pods-ICDNetworkingDemo.debug.xcconfig */,
+				B3E76156D328A4D1CF487BCD /* Pods-ICDNetworkingDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BAD62D725518EDAA6D43C912 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D634D35696516AD0D7C5D6E /* libPods-ICDNetworkingDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26DDD2361C47885400D21F83 /* Build configuration list for PBXNativeTarget "ICDNetworkingDemo" */;
 			buildPhases = (
+				EAE8DB068FF5AAEF2905630E /* Check Pods Manifest.lock */,
 				26DDD21B1C47885400D21F83 /* Sources */,
 				26DDD21C1C47885400D21F83 /* Frameworks */,
 				26DDD21D1C47885400D21F83 /* Resources */,
+				3D94D6FF217391A51722F6BA /* Embed Pods Frameworks */,
+				855F3ABE98375450C097D7AA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D94D6FF217391A51722F6BA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ICDNetworkingDemo/Pods-ICDNetworkingDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		855F3ABE98375450C097D7AA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ICDNetworkingDemo/Pods-ICDNetworkingDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAE8DB068FF5AAEF2905630E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		26DDD21B1C47885400D21F83 /* Sources */ = {
@@ -259,9 +334,11 @@
 		};
 		26DDD2371C47885400D21F83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1E981FA4FAD8881A345A794 /* Pods-ICDNetworkingDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ICDNetworkingDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.icloudoor.ICDNetworkingDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -270,9 +347,11 @@
 		};
 		26DDD2381C47885400D21F83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3E76156D328A4D1CF487BCD /* Pods-ICDNetworkingDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ICDNetworkingDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.icloudoor.ICDNetworkingDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -298,6 +377,7 @@
 				26DDD2381C47885400D21F83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
