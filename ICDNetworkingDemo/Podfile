@@ -10,5 +10,6 @@ target ‘ICDNetworkingDemo’, :exclusive => true do
   pod 'UIDevice-Hardware'
   pod 'MJExtension'
   pod 'ReactiveViewModel', '~> 0.3'
+  pod 'SDWebImage'
 end
 

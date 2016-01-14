@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		26DDD2241C47885400D21F83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2231C47885400D21F83 /* main.m */; };
 		26DDD2271C47885400D21F83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2261C47885400D21F83 /* AppDelegate.m */; };
-		26DDD22A1C47885400D21F83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2291C47885400D21F83 /* ViewController.m */; };
-		26DDD22D1C47885400D21F83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26DDD22B1C47885400D21F83 /* Main.storyboard */; };
 		26DDD22F1C47885400D21F83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26DDD22E1C47885400D21F83 /* Assets.xcassets */; };
 		26DDD2321C47885400D21F83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26DDD2301C47885400D21F83 /* LaunchScreen.storyboard */; };
 		26DDD2A81C4791DA00D21F83 /* NSArray+EnumeratingExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD27E1C4791DA00D21F83 /* NSArray+EnumeratingExtras.m */; };
@@ -31,6 +29,19 @@
 		26DDD2B71C4791DA00D21F83 /* ICDServerAPIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2A31C4791DA00D21F83 /* ICDServerAPIUtils.m */; };
 		26DDD2B81C4791DA00D21F83 /* ICDStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2A51C4791DA00D21F83 /* ICDStringUtils.m */; };
 		26DDD2B91C4791DA00D21F83 /* ICDURLUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2A71C4791DA00D21F83 /* ICDURLUtils.m */; };
+		26DDD2D51C47941200D21F83 /* SocialTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2BC1C47941200D21F83 /* SocialTopic.m */; };
+		26DDD2D61C47941200D21F83 /* UserProfileOfSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2BE1C47941200D21F83 /* UserProfileOfSocial.m */; };
+		26DDD2D71C47941200D21F83 /* ICDDemoAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2C11C47941200D21F83 /* ICDDemoAPI.m */; };
+		26DDD2D81C47941200D21F83 /* ICDDemoService.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2C41C47941200D21F83 /* ICDDemoService.m */; };
+		26DDD2D91C47941200D21F83 /* ICDDemoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2C71C47941200D21F83 /* ICDDemoDetailViewController.m */; };
+		26DDD2DA1C47941200D21F83 /* ICDDemoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26DDD2C81C47941200D21F83 /* ICDDemoDetailViewController.xib */; };
+		26DDD2DB1C47941200D21F83 /* ICDDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2CA1C47941200D21F83 /* ICDDemoViewController.m */; };
+		26DDD2DC1C47941200D21F83 /* ICDDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26DDD2CB1C47941200D21F83 /* ICDDemoViewController.xib */; };
+		26DDD2DD1C47941200D21F83 /* ICDRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2CD1C47941200D21F83 /* ICDRootViewController.m */; };
+		26DDD2DE1C47941200D21F83 /* ICDRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26DDD2CE1C47941200D21F83 /* ICDRootViewController.xib */; };
+		26DDD2DF1C47941200D21F83 /* NeighborTopicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2D01C47941200D21F83 /* NeighborTopicTableViewCell.m */; };
+		26DDD2E01C47941200D21F83 /* NeighborTopicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26DDD2D11C47941200D21F83 /* NeighborTopicTableViewCell.xib */; };
+		26DDD2E11C47941200D21F83 /* ICDDemoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2D41C47941200D21F83 /* ICDDemoViewModel.m */; };
 		FD4F33242B53F9F290562D1A /* libPods-ICDNetworkingDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D634D35696516AD0D7C5D6E /* libPods-ICDNetworkingDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -39,9 +50,6 @@
 		26DDD2231C47885400D21F83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		26DDD2251C47885400D21F83 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		26DDD2261C47885400D21F83 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		26DDD2281C47885400D21F83 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		26DDD2291C47885400D21F83 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		26DDD22C1C47885400D21F83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26DDD22E1C47885400D21F83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26DDD2311C47885400D21F83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26DDD2331C47885400D21F83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,6 +90,28 @@
 		26DDD2A51C4791DA00D21F83 /* ICDStringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDStringUtils.m; sourceTree = "<group>"; };
 		26DDD2A61C4791DA00D21F83 /* ICDURLUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDURLUtils.h; sourceTree = "<group>"; };
 		26DDD2A71C4791DA00D21F83 /* ICDURLUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDURLUtils.m; sourceTree = "<group>"; };
+		26DDD2BB1C47941200D21F83 /* SocialTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialTopic.h; sourceTree = "<group>"; };
+		26DDD2BC1C47941200D21F83 /* SocialTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialTopic.m; sourceTree = "<group>"; };
+		26DDD2BD1C47941200D21F83 /* UserProfileOfSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProfileOfSocial.h; sourceTree = "<group>"; };
+		26DDD2BE1C47941200D21F83 /* UserProfileOfSocial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfileOfSocial.m; sourceTree = "<group>"; };
+		26DDD2C01C47941200D21F83 /* ICDDemoAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDDemoAPI.h; sourceTree = "<group>"; };
+		26DDD2C11C47941200D21F83 /* ICDDemoAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDDemoAPI.m; sourceTree = "<group>"; };
+		26DDD2C31C47941200D21F83 /* ICDDemoService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDDemoService.h; sourceTree = "<group>"; };
+		26DDD2C41C47941200D21F83 /* ICDDemoService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDDemoService.m; sourceTree = "<group>"; };
+		26DDD2C61C47941200D21F83 /* ICDDemoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDDemoDetailViewController.h; sourceTree = "<group>"; };
+		26DDD2C71C47941200D21F83 /* ICDDemoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDDemoDetailViewController.m; sourceTree = "<group>"; };
+		26DDD2C81C47941200D21F83 /* ICDDemoDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICDDemoDetailViewController.xib; sourceTree = "<group>"; };
+		26DDD2C91C47941200D21F83 /* ICDDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDDemoViewController.h; sourceTree = "<group>"; };
+		26DDD2CA1C47941200D21F83 /* ICDDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDDemoViewController.m; sourceTree = "<group>"; };
+		26DDD2CB1C47941200D21F83 /* ICDDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICDDemoViewController.xib; sourceTree = "<group>"; };
+		26DDD2CC1C47941200D21F83 /* ICDRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDRootViewController.h; sourceTree = "<group>"; };
+		26DDD2CD1C47941200D21F83 /* ICDRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDRootViewController.m; sourceTree = "<group>"; };
+		26DDD2CE1C47941200D21F83 /* ICDRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICDRootViewController.xib; sourceTree = "<group>"; };
+		26DDD2CF1C47941200D21F83 /* NeighborTopicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeighborTopicTableViewCell.h; sourceTree = "<group>"; };
+		26DDD2D01C47941200D21F83 /* NeighborTopicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeighborTopicTableViewCell.m; sourceTree = "<group>"; };
+		26DDD2D11C47941200D21F83 /* NeighborTopicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NeighborTopicTableViewCell.xib; sourceTree = "<group>"; };
+		26DDD2D31C47941200D21F83 /* ICDDemoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDDemoViewModel.h; sourceTree = "<group>"; };
+		26DDD2D41C47941200D21F83 /* ICDDemoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDDemoViewModel.m; sourceTree = "<group>"; };
 		2D634D35696516AD0D7C5D6E /* libPods-ICDNetworkingDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ICDNetworkingDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E76156D328A4D1CF487BCD /* Pods-ICDNetworkingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICDNetworkingDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ICDNetworkingDemo/Pods-ICDNetworkingDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E1E981FA4FAD8881A345A794 /* Pods-ICDNetworkingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICDNetworkingDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ICDNetworkingDemo/Pods-ICDNetworkingDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,9 +153,11 @@
 			children = (
 				26DDD2251C47885400D21F83 /* AppDelegate.h */,
 				26DDD2261C47885400D21F83 /* AppDelegate.m */,
-				26DDD2281C47885400D21F83 /* ViewController.h */,
-				26DDD2291C47885400D21F83 /* ViewController.m */,
-				26DDD22B1C47885400D21F83 /* Main.storyboard */,
+				26DDD2BA1C47941200D21F83 /* Model */,
+				26DDD2C51C47941200D21F83 /* View+Controller */,
+				26DDD2D21C47941200D21F83 /* ViewModel */,
+				26DDD2BF1C47941200D21F83 /* ServerAPI */,
+				26DDD2C21C47941200D21F83 /* Services */,
 				26DDD22E1C47885400D21F83 /* Assets.xcassets */,
 				26DDD2301C47885400D21F83 /* LaunchScreen.storyboard */,
 				26DDD2331C47885400D21F83 /* Info.plist */,
@@ -258,6 +290,63 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		26DDD2BA1C47941200D21F83 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				26DDD2BB1C47941200D21F83 /* SocialTopic.h */,
+				26DDD2BC1C47941200D21F83 /* SocialTopic.m */,
+				26DDD2BD1C47941200D21F83 /* UserProfileOfSocial.h */,
+				26DDD2BE1C47941200D21F83 /* UserProfileOfSocial.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		26DDD2BF1C47941200D21F83 /* ServerAPI */ = {
+			isa = PBXGroup;
+			children = (
+				26DDD2C01C47941200D21F83 /* ICDDemoAPI.h */,
+				26DDD2C11C47941200D21F83 /* ICDDemoAPI.m */,
+			);
+			path = ServerAPI;
+			sourceTree = "<group>";
+		};
+		26DDD2C21C47941200D21F83 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				26DDD2C31C47941200D21F83 /* ICDDemoService.h */,
+				26DDD2C41C47941200D21F83 /* ICDDemoService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		26DDD2C51C47941200D21F83 /* View+Controller */ = {
+			isa = PBXGroup;
+			children = (
+				26DDD2C61C47941200D21F83 /* ICDDemoDetailViewController.h */,
+				26DDD2C71C47941200D21F83 /* ICDDemoDetailViewController.m */,
+				26DDD2C81C47941200D21F83 /* ICDDemoDetailViewController.xib */,
+				26DDD2C91C47941200D21F83 /* ICDDemoViewController.h */,
+				26DDD2CA1C47941200D21F83 /* ICDDemoViewController.m */,
+				26DDD2CB1C47941200D21F83 /* ICDDemoViewController.xib */,
+				26DDD2CC1C47941200D21F83 /* ICDRootViewController.h */,
+				26DDD2CD1C47941200D21F83 /* ICDRootViewController.m */,
+				26DDD2CE1C47941200D21F83 /* ICDRootViewController.xib */,
+				26DDD2CF1C47941200D21F83 /* NeighborTopicTableViewCell.h */,
+				26DDD2D01C47941200D21F83 /* NeighborTopicTableViewCell.m */,
+				26DDD2D11C47941200D21F83 /* NeighborTopicTableViewCell.xib */,
+			);
+			path = "View+Controller";
+			sourceTree = "<group>";
+		};
+		26DDD2D21C47941200D21F83 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				26DDD2D31C47941200D21F83 /* ICDDemoViewModel.h */,
+				26DDD2D41C47941200D21F83 /* ICDDemoViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		76025BC7ACAA7B3746604C19 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -335,9 +424,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26DDD2DE1C47941200D21F83 /* ICDRootViewController.xib in Resources */,
 				26DDD2321C47885400D21F83 /* LaunchScreen.storyboard in Resources */,
 				26DDD22F1C47885400D21F83 /* Assets.xcassets in Resources */,
-				26DDD22D1C47885400D21F83 /* Main.storyboard in Resources */,
+				26DDD2DC1C47941200D21F83 /* ICDDemoViewController.xib in Resources */,
+				26DDD2DA1C47941200D21F83 /* ICDDemoDetailViewController.xib in Resources */,
+				26DDD2E01C47941200D21F83 /* NeighborTopicTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,20 +493,28 @@
 				26DDD2AD1C4791DA00D21F83 /* ICDAPPConstants.m in Sources */,
 				26DDD2AB1C4791DA00D21F83 /* UIView+NibLoading.m in Sources */,
 				26DDD2B21C4791DA00D21F83 /* ICDBaseRequest.m in Sources */,
-				26DDD22A1C47885400D21F83 /* ViewController.m in Sources */,
+				26DDD2D91C47941200D21F83 /* ICDDemoDetailViewController.m in Sources */,
 				26DDD2B41C4791DA00D21F83 /* ICDURLCacheDAO.m in Sources */,
 				26DDD2AA1C4791DA00D21F83 /* NSString+Trim.m in Sources */,
 				26DDD2A91C4791DA00D21F83 /* NSDate+Extras.m in Sources */,
+				26DDD2DD1C47941200D21F83 /* ICDRootViewController.m in Sources */,
 				26DDD2B61C4791DA00D21F83 /* ICDErrorUtils.m in Sources */,
+				26DDD2DF1C47941200D21F83 /* NeighborTopicTableViewCell.m in Sources */,
+				26DDD2D81C47941200D21F83 /* ICDDemoService.m in Sources */,
 				26DDD2B11C4791DA00D21F83 /* ICDServerAPIResponse.m in Sources */,
+				26DDD2DB1C47941200D21F83 /* ICDDemoViewController.m in Sources */,
 				26DDD2271C47885400D21F83 /* AppDelegate.m in Sources */,
 				26DDD2241C47885400D21F83 /* main.m in Sources */,
+				26DDD2D61C47941200D21F83 /* UserProfileOfSocial.m in Sources */,
 				26DDD2AC1C4791DA00D21F83 /* UIView+TLLayout.m in Sources */,
+				26DDD2D71C47941200D21F83 /* ICDDemoAPI.m in Sources */,
+				26DDD2E11C47941200D21F83 /* ICDDemoViewModel.m in Sources */,
 				26DDD2B71C4791DA00D21F83 /* ICDServerAPIUtils.m in Sources */,
 				26DDD2A81C4791DA00D21F83 /* NSArray+EnumeratingExtras.m in Sources */,
 				26DDD2B91C4791DA00D21F83 /* ICDURLUtils.m in Sources */,
 				26DDD2AE1C4791DA00D21F83 /* ICDErrorConstants.m in Sources */,
 				26DDD2B51C4791DA00D21F83 /* ICDDeviceUtils.m in Sources */,
+				26DDD2D51C47941200D21F83 /* SocialTopic.m in Sources */,
 				26DDD2AF1C4791DA00D21F83 /* ICDNotificationConstants.m in Sources */,
 				26DDD2B81C4791DA00D21F83 /* ICDStringUtils.m in Sources */,
 			);
@@ -423,14 +523,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		26DDD22B1C47885400D21F83 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				26DDD22C1C47885400D21F83 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		26DDD2301C47885400D21F83 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

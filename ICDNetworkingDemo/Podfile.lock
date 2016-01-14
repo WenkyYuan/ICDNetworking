@@ -28,6 +28,9 @@ PODS:
     - ReactiveCocoa/Core
   - ReactiveViewModel (0.3):
     - ReactiveCocoa (~> 2.4)
+  - SDWebImage (3.7.4):
+    - SDWebImage/Core (= 3.7.4)
+  - SDWebImage/Core (3.7.4)
   - UIDevice-Hardware (0.1.7)
 
 DEPENDENCIES:
@@ -36,6 +39,7 @@ DEPENDENCIES:
   - MJExtension
   - NSURL+QueryDictionary
   - ReactiveViewModel (~> 0.3)
+  - SDWebImage
   - UIDevice-Hardware
 
 SPEC CHECKSUMS:
@@ -45,6 +49,7 @@ SPEC CHECKSUMS:
   NSURL+QueryDictionary: dd0a5fec689a9b4780b6fa0e0225c01ca3ea653e
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   ReactiveViewModel: 58918dcbcec2d3151195ab1ed9163c57a8163999
+  SDWebImage: 247edd7dd80dd6124197b0d6a17846fe9d1df968
   UIDevice-Hardware: de848ac4b53de555f70ff1a32877454d221c71d1
 
 COCOAPODS: 0.39.0
