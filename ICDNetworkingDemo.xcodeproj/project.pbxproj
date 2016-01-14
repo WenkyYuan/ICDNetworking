@@ -20,9 +20,6 @@
 		26DDD2AE1C4791DA00D21F83 /* ICDErrorConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD28C1C4791DA00D21F83 /* ICDErrorConstants.m */; };
 		26DDD2AF1C4791DA00D21F83 /* ICDNotificationConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD28E1C4791DA00D21F83 /* ICDNotificationConstants.m */; };
 		26DDD2B01C4791DA00D21F83 /* ICDServerAPIConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2901C4791DA00D21F83 /* ICDServerAPIConstants.m */; };
-		26DDD2B11C4791DA00D21F83 /* ICDServerAPIResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2941C4791DA00D21F83 /* ICDServerAPIResponse.m */; };
-		26DDD2B21C4791DA00D21F83 /* ICDBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2971C4791DA00D21F83 /* ICDBaseRequest.m */; };
-		26DDD2B31C4791DA00D21F83 /* ICDKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD29A1C4791DA00D21F83 /* ICDKVStorage.m */; };
 		26DDD2B41C4791DA00D21F83 /* ICDURLCacheDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD29C1C4791DA00D21F83 /* ICDURLCacheDAO.m */; };
 		26DDD2B51C4791DA00D21F83 /* ICDDeviceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD29F1C4791DA00D21F83 /* ICDDeviceUtils.m */; };
 		26DDD2B61C4791DA00D21F83 /* ICDErrorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2A11C4791DA00D21F83 /* ICDErrorUtils.m */; };
@@ -42,6 +39,8 @@
 		26DDD2DF1C47941200D21F83 /* NeighborTopicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2D01C47941200D21F83 /* NeighborTopicTableViewCell.m */; };
 		26DDD2E01C47941200D21F83 /* NeighborTopicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26DDD2D11C47941200D21F83 /* NeighborTopicTableViewCell.xib */; };
 		26DDD2E11C47941200D21F83 /* ICDDemoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2D41C47941200D21F83 /* ICDDemoViewModel.m */; };
+		26DDD2E51C479B4800D21F83 /* ICDServerAPIResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2E41C479B4800D21F83 /* ICDServerAPIResponse.m */; };
+		26DDD2E81C479CC800D21F83 /* ICDBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2E71C479CC800D21F83 /* ICDBaseRequest.m */; };
 		FD4F33242B53F9F290562D1A /* libPods-ICDNetworkingDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D634D35696516AD0D7C5D6E /* libPods-ICDNetworkingDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -72,12 +71,6 @@
 		26DDD28E1C4791DA00D21F83 /* ICDNotificationConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDNotificationConstants.m; sourceTree = "<group>"; };
 		26DDD28F1C4791DA00D21F83 /* ICDServerAPIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDServerAPIConstants.h; sourceTree = "<group>"; };
 		26DDD2901C4791DA00D21F83 /* ICDServerAPIConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDServerAPIConstants.m; sourceTree = "<group>"; };
-		26DDD2931C4791DA00D21F83 /* ICDServerAPIResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDServerAPIResponse.h; sourceTree = "<group>"; };
-		26DDD2941C4791DA00D21F83 /* ICDServerAPIResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDServerAPIResponse.m; sourceTree = "<group>"; };
-		26DDD2961C4791DA00D21F83 /* ICDBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDBaseRequest.h; sourceTree = "<group>"; };
-		26DDD2971C4791DA00D21F83 /* ICDBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDBaseRequest.m; sourceTree = "<group>"; };
-		26DDD2991C4791DA00D21F83 /* ICDKVStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDKVStorage.h; sourceTree = "<group>"; };
-		26DDD29A1C4791DA00D21F83 /* ICDKVStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDKVStorage.m; sourceTree = "<group>"; };
 		26DDD29B1C4791DA00D21F83 /* ICDURLCacheDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDURLCacheDAO.h; sourceTree = "<group>"; };
 		26DDD29C1C4791DA00D21F83 /* ICDURLCacheDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDURLCacheDAO.m; sourceTree = "<group>"; };
 		26DDD29E1C4791DA00D21F83 /* ICDDeviceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDDeviceUtils.h; sourceTree = "<group>"; };
@@ -112,6 +105,10 @@
 		26DDD2D11C47941200D21F83 /* NeighborTopicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NeighborTopicTableViewCell.xib; sourceTree = "<group>"; };
 		26DDD2D31C47941200D21F83 /* ICDDemoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDDemoViewModel.h; sourceTree = "<group>"; };
 		26DDD2D41C47941200D21F83 /* ICDDemoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDDemoViewModel.m; sourceTree = "<group>"; };
+		26DDD2E31C479B4800D21F83 /* ICDServerAPIResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDServerAPIResponse.h; sourceTree = "<group>"; };
+		26DDD2E41C479B4800D21F83 /* ICDServerAPIResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDServerAPIResponse.m; sourceTree = "<group>"; };
+		26DDD2E61C479CC800D21F83 /* ICDBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDBaseRequest.h; sourceTree = "<group>"; };
+		26DDD2E71C479CC800D21F83 /* ICDBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDBaseRequest.m; sourceTree = "<group>"; };
 		2D634D35696516AD0D7C5D6E /* libPods-ICDNetworkingDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ICDNetworkingDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E76156D328A4D1CF487BCD /* Pods-ICDNetworkingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICDNetworkingDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ICDNetworkingDemo/Pods-ICDNetworkingDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E1E981FA4FAD8881A345A794 /* Pods-ICDNetworkingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICDNetworkingDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ICDNetworkingDemo/Pods-ICDNetworkingDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -178,10 +175,11 @@
 		26DDD27A1C4791DA00D21F83 /* ICDNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				26DDD2E61C479CC800D21F83 /* ICDBaseRequest.h */,
+				26DDD2E71C479CC800D21F83 /* ICDBaseRequest.m */,
 				26DDD27B1C4791DA00D21F83 /* Categories */,
 				26DDD2881C4791DA00D21F83 /* Constants */,
-				26DDD2911C4791DA00D21F83 /* Models */,
-				26DDD2951C4791DA00D21F83 /* ServerAPI */,
+				26DDD2E21C479B4800D21F83 /* Model */,
 				26DDD2981C4791DA00D21F83 /* Storage */,
 				26DDD29D1C4791DA00D21F83 /* Utils */,
 			);
@@ -236,37 +234,9 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
-		26DDD2911C4791DA00D21F83 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				26DDD2921C4791DA00D21F83 /* APIResponse */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		26DDD2921C4791DA00D21F83 /* APIResponse */ = {
-			isa = PBXGroup;
-			children = (
-				26DDD2931C4791DA00D21F83 /* ICDServerAPIResponse.h */,
-				26DDD2941C4791DA00D21F83 /* ICDServerAPIResponse.m */,
-			);
-			path = APIResponse;
-			sourceTree = "<group>";
-		};
-		26DDD2951C4791DA00D21F83 /* ServerAPI */ = {
-			isa = PBXGroup;
-			children = (
-				26DDD2961C4791DA00D21F83 /* ICDBaseRequest.h */,
-				26DDD2971C4791DA00D21F83 /* ICDBaseRequest.m */,
-			);
-			path = ServerAPI;
-			sourceTree = "<group>";
-		};
 		26DDD2981C4791DA00D21F83 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
-				26DDD2991C4791DA00D21F83 /* ICDKVStorage.h */,
-				26DDD29A1C4791DA00D21F83 /* ICDKVStorage.m */,
 				26DDD29B1C4791DA00D21F83 /* ICDURLCacheDAO.h */,
 				26DDD29C1C4791DA00D21F83 /* ICDURLCacheDAO.m */,
 			);
@@ -346,6 +316,16 @@
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
+		};
+		26DDD2E21C479B4800D21F83 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				26DDD2E31C479B4800D21F83 /* ICDServerAPIResponse.h */,
+				26DDD2E41C479B4800D21F83 /* ICDServerAPIResponse.m */,
+			);
+			name = Model;
+			path = ICDNetworking/Model;
+			sourceTree = SOURCE_ROOT;
 		};
 		76025BC7ACAA7B3746604C19 /* Pods */ = {
 			isa = PBXGroup;
@@ -488,20 +468,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26DDD2B31C4791DA00D21F83 /* ICDKVStorage.m in Sources */,
 				26DDD2B01C4791DA00D21F83 /* ICDServerAPIConstants.m in Sources */,
 				26DDD2AD1C4791DA00D21F83 /* ICDAPPConstants.m in Sources */,
 				26DDD2AB1C4791DA00D21F83 /* UIView+NibLoading.m in Sources */,
-				26DDD2B21C4791DA00D21F83 /* ICDBaseRequest.m in Sources */,
+				26DDD2E81C479CC800D21F83 /* ICDBaseRequest.m in Sources */,
 				26DDD2D91C47941200D21F83 /* ICDDemoDetailViewController.m in Sources */,
 				26DDD2B41C4791DA00D21F83 /* ICDURLCacheDAO.m in Sources */,
 				26DDD2AA1C4791DA00D21F83 /* NSString+Trim.m in Sources */,
 				26DDD2A91C4791DA00D21F83 /* NSDate+Extras.m in Sources */,
 				26DDD2DD1C47941200D21F83 /* ICDRootViewController.m in Sources */,
+				26DDD2E51C479B4800D21F83 /* ICDServerAPIResponse.m in Sources */,
 				26DDD2B61C4791DA00D21F83 /* ICDErrorUtils.m in Sources */,
 				26DDD2DF1C47941200D21F83 /* NeighborTopicTableViewCell.m in Sources */,
 				26DDD2D81C47941200D21F83 /* ICDDemoService.m in Sources */,
-				26DDD2B11C4791DA00D21F83 /* ICDServerAPIResponse.m in Sources */,
 				26DDD2DB1C47941200D21F83 /* ICDDemoViewController.m in Sources */,
 				26DDD2271C47885400D21F83 /* AppDelegate.m in Sources */,
 				26DDD2241C47885400D21F83 /* main.m in Sources */,
