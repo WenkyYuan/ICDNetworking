@@ -1,5 +1,5 @@
-# ICDNetWorking
-基于AFNetWorking3.0+的iOS应用网络层框架，使用Block方式向上层传递请求结果。
+# ICDNetworking
+基于AFNetworking3.0+的iOS应用网络层框架，使用Block方式向上层传递请求结果。
 
 ##版本
 1.0.0版本：框架雏形，暂只支持POST和GET请求，支持URL缓存

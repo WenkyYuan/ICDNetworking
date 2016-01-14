@@ -13,6 +13,24 @@
 		26DDD22D1C47885400D21F83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26DDD22B1C47885400D21F83 /* Main.storyboard */; };
 		26DDD22F1C47885400D21F83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26DDD22E1C47885400D21F83 /* Assets.xcassets */; };
 		26DDD2321C47885400D21F83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26DDD2301C47885400D21F83 /* LaunchScreen.storyboard */; };
+		26DDD2A81C4791DA00D21F83 /* NSArray+EnumeratingExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD27E1C4791DA00D21F83 /* NSArray+EnumeratingExtras.m */; };
+		26DDD2A91C4791DA00D21F83 /* NSDate+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2801C4791DA00D21F83 /* NSDate+Extras.m */; };
+		26DDD2AA1C4791DA00D21F83 /* NSString+Trim.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2821C4791DA00D21F83 /* NSString+Trim.m */; };
+		26DDD2AB1C4791DA00D21F83 /* UIView+NibLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2851C4791DA00D21F83 /* UIView+NibLoading.m */; };
+		26DDD2AC1C4791DA00D21F83 /* UIView+TLLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2871C4791DA00D21F83 /* UIView+TLLayout.m */; };
+		26DDD2AD1C4791DA00D21F83 /* ICDAPPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD28A1C4791DA00D21F83 /* ICDAPPConstants.m */; };
+		26DDD2AE1C4791DA00D21F83 /* ICDErrorConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD28C1C4791DA00D21F83 /* ICDErrorConstants.m */; };
+		26DDD2AF1C4791DA00D21F83 /* ICDNotificationConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD28E1C4791DA00D21F83 /* ICDNotificationConstants.m */; };
+		26DDD2B01C4791DA00D21F83 /* ICDServerAPIConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2901C4791DA00D21F83 /* ICDServerAPIConstants.m */; };
+		26DDD2B11C4791DA00D21F83 /* ICDServerAPIResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2941C4791DA00D21F83 /* ICDServerAPIResponse.m */; };
+		26DDD2B21C4791DA00D21F83 /* ICDBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2971C4791DA00D21F83 /* ICDBaseRequest.m */; };
+		26DDD2B31C4791DA00D21F83 /* ICDKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD29A1C4791DA00D21F83 /* ICDKVStorage.m */; };
+		26DDD2B41C4791DA00D21F83 /* ICDURLCacheDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD29C1C4791DA00D21F83 /* ICDURLCacheDAO.m */; };
+		26DDD2B51C4791DA00D21F83 /* ICDDeviceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD29F1C4791DA00D21F83 /* ICDDeviceUtils.m */; };
+		26DDD2B61C4791DA00D21F83 /* ICDErrorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2A11C4791DA00D21F83 /* ICDErrorUtils.m */; };
+		26DDD2B71C4791DA00D21F83 /* ICDServerAPIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2A31C4791DA00D21F83 /* ICDServerAPIUtils.m */; };
+		26DDD2B81C4791DA00D21F83 /* ICDStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2A51C4791DA00D21F83 /* ICDStringUtils.m */; };
+		26DDD2B91C4791DA00D21F83 /* ICDURLUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2A71C4791DA00D21F83 /* ICDURLUtils.m */; };
 		FD4F33242B53F9F290562D1A /* libPods-ICDNetworkingDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D634D35696516AD0D7C5D6E /* libPods-ICDNetworkingDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +45,43 @@
 		26DDD22E1C47885400D21F83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26DDD2311C47885400D21F83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26DDD2331C47885400D21F83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26DDD2791C478DFE00D21F83 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		26DDD27D1C4791DA00D21F83 /* NSArray+EnumeratingExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+EnumeratingExtras.h"; sourceTree = "<group>"; };
+		26DDD27E1C4791DA00D21F83 /* NSArray+EnumeratingExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+EnumeratingExtras.m"; sourceTree = "<group>"; };
+		26DDD27F1C4791DA00D21F83 /* NSDate+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extras.h"; sourceTree = "<group>"; };
+		26DDD2801C4791DA00D21F83 /* NSDate+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extras.m"; sourceTree = "<group>"; };
+		26DDD2811C4791DA00D21F83 /* NSString+Trim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Trim.h"; sourceTree = "<group>"; };
+		26DDD2821C4791DA00D21F83 /* NSString+Trim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Trim.m"; sourceTree = "<group>"; };
+		26DDD2841C4791DA00D21F83 /* UIView+NibLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NibLoading.h"; sourceTree = "<group>"; };
+		26DDD2851C4791DA00D21F83 /* UIView+NibLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NibLoading.m"; sourceTree = "<group>"; };
+		26DDD2861C4791DA00D21F83 /* UIView+TLLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TLLayout.h"; sourceTree = "<group>"; };
+		26DDD2871C4791DA00D21F83 /* UIView+TLLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TLLayout.m"; sourceTree = "<group>"; };
+		26DDD2891C4791DA00D21F83 /* ICDAPPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDAPPConstants.h; sourceTree = "<group>"; };
+		26DDD28A1C4791DA00D21F83 /* ICDAPPConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDAPPConstants.m; sourceTree = "<group>"; };
+		26DDD28B1C4791DA00D21F83 /* ICDErrorConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDErrorConstants.h; sourceTree = "<group>"; };
+		26DDD28C1C4791DA00D21F83 /* ICDErrorConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDErrorConstants.m; sourceTree = "<group>"; };
+		26DDD28D1C4791DA00D21F83 /* ICDNotificationConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDNotificationConstants.h; sourceTree = "<group>"; };
+		26DDD28E1C4791DA00D21F83 /* ICDNotificationConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDNotificationConstants.m; sourceTree = "<group>"; };
+		26DDD28F1C4791DA00D21F83 /* ICDServerAPIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDServerAPIConstants.h; sourceTree = "<group>"; };
+		26DDD2901C4791DA00D21F83 /* ICDServerAPIConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDServerAPIConstants.m; sourceTree = "<group>"; };
+		26DDD2931C4791DA00D21F83 /* ICDServerAPIResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDServerAPIResponse.h; sourceTree = "<group>"; };
+		26DDD2941C4791DA00D21F83 /* ICDServerAPIResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDServerAPIResponse.m; sourceTree = "<group>"; };
+		26DDD2961C4791DA00D21F83 /* ICDBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDBaseRequest.h; sourceTree = "<group>"; };
+		26DDD2971C4791DA00D21F83 /* ICDBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDBaseRequest.m; sourceTree = "<group>"; };
+		26DDD2991C4791DA00D21F83 /* ICDKVStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDKVStorage.h; sourceTree = "<group>"; };
+		26DDD29A1C4791DA00D21F83 /* ICDKVStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDKVStorage.m; sourceTree = "<group>"; };
+		26DDD29B1C4791DA00D21F83 /* ICDURLCacheDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDURLCacheDAO.h; sourceTree = "<group>"; };
+		26DDD29C1C4791DA00D21F83 /* ICDURLCacheDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDURLCacheDAO.m; sourceTree = "<group>"; };
+		26DDD29E1C4791DA00D21F83 /* ICDDeviceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDDeviceUtils.h; sourceTree = "<group>"; };
+		26DDD29F1C4791DA00D21F83 /* ICDDeviceUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDDeviceUtils.m; sourceTree = "<group>"; };
+		26DDD2A01C4791DA00D21F83 /* ICDErrorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDErrorUtils.h; sourceTree = "<group>"; };
+		26DDD2A11C4791DA00D21F83 /* ICDErrorUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDErrorUtils.m; sourceTree = "<group>"; };
+		26DDD2A21C4791DA00D21F83 /* ICDServerAPIUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDServerAPIUtils.h; sourceTree = "<group>"; };
+		26DDD2A31C4791DA00D21F83 /* ICDServerAPIUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDServerAPIUtils.m; sourceTree = "<group>"; };
+		26DDD2A41C4791DA00D21F83 /* ICDStringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDStringUtils.h; sourceTree = "<group>"; };
+		26DDD2A51C4791DA00D21F83 /* ICDStringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDStringUtils.m; sourceTree = "<group>"; };
+		26DDD2A61C4791DA00D21F83 /* ICDURLUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDURLUtils.h; sourceTree = "<group>"; };
+		26DDD2A71C4791DA00D21F83 /* ICDURLUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDURLUtils.m; sourceTree = "<group>"; };
 		2D634D35696516AD0D7C5D6E /* libPods-ICDNetworkingDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ICDNetworkingDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E76156D328A4D1CF487BCD /* Pods-ICDNetworkingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICDNetworkingDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ICDNetworkingDemo/Pods-ICDNetworkingDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E1E981FA4FAD8881A345A794 /* Pods-ICDNetworkingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICDNetworkingDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ICDNetworkingDemo/Pods-ICDNetworkingDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -47,6 +102,7 @@
 		26DDD2161C47885400D21F83 = {
 			isa = PBXGroup;
 			children = (
+				26DDD27A1C4791DA00D21F83 /* ICDNetworking */,
 				26DDD2211C47885400D21F83 /* ICDNetworkingDemo */,
 				26DDD2201C47885400D21F83 /* Products */,
 				76025BC7ACAA7B3746604C19 /* Pods */,
@@ -73,6 +129,7 @@
 				26DDD22E1C47885400D21F83 /* Assets.xcassets */,
 				26DDD2301C47885400D21F83 /* LaunchScreen.storyboard */,
 				26DDD2331C47885400D21F83 /* Info.plist */,
+				26DDD2791C478DFE00D21F83 /* PrefixHeader.pch */,
 				26DDD2221C47885400D21F83 /* Supporting Files */,
 			);
 			path = ICDNetworkingDemo;
@@ -84,6 +141,121 @@
 				26DDD2231C47885400D21F83 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		26DDD27A1C4791DA00D21F83 /* ICDNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				26DDD27B1C4791DA00D21F83 /* Categories */,
+				26DDD2881C4791DA00D21F83 /* Constants */,
+				26DDD2911C4791DA00D21F83 /* Models */,
+				26DDD2951C4791DA00D21F83 /* ServerAPI */,
+				26DDD2981C4791DA00D21F83 /* Storage */,
+				26DDD29D1C4791DA00D21F83 /* Utils */,
+			);
+			path = ICDNetworking;
+			sourceTree = "<group>";
+		};
+		26DDD27B1C4791DA00D21F83 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				26DDD27C1C4791DA00D21F83 /* Foundation */,
+				26DDD2831C4791DA00D21F83 /* UIKit */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		26DDD27C1C4791DA00D21F83 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				26DDD27D1C4791DA00D21F83 /* NSArray+EnumeratingExtras.h */,
+				26DDD27E1C4791DA00D21F83 /* NSArray+EnumeratingExtras.m */,
+				26DDD27F1C4791DA00D21F83 /* NSDate+Extras.h */,
+				26DDD2801C4791DA00D21F83 /* NSDate+Extras.m */,
+				26DDD2811C4791DA00D21F83 /* NSString+Trim.h */,
+				26DDD2821C4791DA00D21F83 /* NSString+Trim.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		26DDD2831C4791DA00D21F83 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				26DDD2841C4791DA00D21F83 /* UIView+NibLoading.h */,
+				26DDD2851C4791DA00D21F83 /* UIView+NibLoading.m */,
+				26DDD2861C4791DA00D21F83 /* UIView+TLLayout.h */,
+				26DDD2871C4791DA00D21F83 /* UIView+TLLayout.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		26DDD2881C4791DA00D21F83 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				26DDD2891C4791DA00D21F83 /* ICDAPPConstants.h */,
+				26DDD28A1C4791DA00D21F83 /* ICDAPPConstants.m */,
+				26DDD28B1C4791DA00D21F83 /* ICDErrorConstants.h */,
+				26DDD28C1C4791DA00D21F83 /* ICDErrorConstants.m */,
+				26DDD28D1C4791DA00D21F83 /* ICDNotificationConstants.h */,
+				26DDD28E1C4791DA00D21F83 /* ICDNotificationConstants.m */,
+				26DDD28F1C4791DA00D21F83 /* ICDServerAPIConstants.h */,
+				26DDD2901C4791DA00D21F83 /* ICDServerAPIConstants.m */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		26DDD2911C4791DA00D21F83 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				26DDD2921C4791DA00D21F83 /* APIResponse */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		26DDD2921C4791DA00D21F83 /* APIResponse */ = {
+			isa = PBXGroup;
+			children = (
+				26DDD2931C4791DA00D21F83 /* ICDServerAPIResponse.h */,
+				26DDD2941C4791DA00D21F83 /* ICDServerAPIResponse.m */,
+			);
+			path = APIResponse;
+			sourceTree = "<group>";
+		};
+		26DDD2951C4791DA00D21F83 /* ServerAPI */ = {
+			isa = PBXGroup;
+			children = (
+				26DDD2961C4791DA00D21F83 /* ICDBaseRequest.h */,
+				26DDD2971C4791DA00D21F83 /* ICDBaseRequest.m */,
+			);
+			path = ServerAPI;
+			sourceTree = "<group>";
+		};
+		26DDD2981C4791DA00D21F83 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				26DDD2991C4791DA00D21F83 /* ICDKVStorage.h */,
+				26DDD29A1C4791DA00D21F83 /* ICDKVStorage.m */,
+				26DDD29B1C4791DA00D21F83 /* ICDURLCacheDAO.h */,
+				26DDD29C1C4791DA00D21F83 /* ICDURLCacheDAO.m */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		26DDD29D1C4791DA00D21F83 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				26DDD29E1C4791DA00D21F83 /* ICDDeviceUtils.h */,
+				26DDD29F1C4791DA00D21F83 /* ICDDeviceUtils.m */,
+				26DDD2A01C4791DA00D21F83 /* ICDErrorUtils.h */,
+				26DDD2A11C4791DA00D21F83 /* ICDErrorUtils.m */,
+				26DDD2A21C4791DA00D21F83 /* ICDServerAPIUtils.h */,
+				26DDD2A31C4791DA00D21F83 /* ICDServerAPIUtils.m */,
+				26DDD2A41C4791DA00D21F83 /* ICDStringUtils.h */,
+				26DDD2A51C4791DA00D21F83 /* ICDStringUtils.m */,
+				26DDD2A61C4791DA00D21F83 /* ICDURLUtils.h */,
+				26DDD2A71C4791DA00D21F83 /* ICDURLUtils.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		76025BC7ACAA7B3746604C19 /* Pods */ = {
@@ -224,9 +396,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26DDD2B31C4791DA00D21F83 /* ICDKVStorage.m in Sources */,
+				26DDD2B01C4791DA00D21F83 /* ICDServerAPIConstants.m in Sources */,
+				26DDD2AD1C4791DA00D21F83 /* ICDAPPConstants.m in Sources */,
+				26DDD2AB1C4791DA00D21F83 /* UIView+NibLoading.m in Sources */,
+				26DDD2B21C4791DA00D21F83 /* ICDBaseRequest.m in Sources */,
 				26DDD22A1C47885400D21F83 /* ViewController.m in Sources */,
+				26DDD2B41C4791DA00D21F83 /* ICDURLCacheDAO.m in Sources */,
+				26DDD2AA1C4791DA00D21F83 /* NSString+Trim.m in Sources */,
+				26DDD2A91C4791DA00D21F83 /* NSDate+Extras.m in Sources */,
+				26DDD2B61C4791DA00D21F83 /* ICDErrorUtils.m in Sources */,
+				26DDD2B11C4791DA00D21F83 /* ICDServerAPIResponse.m in Sources */,
 				26DDD2271C47885400D21F83 /* AppDelegate.m in Sources */,
 				26DDD2241C47885400D21F83 /* main.m in Sources */,
+				26DDD2AC1C4791DA00D21F83 /* UIView+TLLayout.m in Sources */,
+				26DDD2B71C4791DA00D21F83 /* ICDServerAPIUtils.m in Sources */,
+				26DDD2A81C4791DA00D21F83 /* NSArray+EnumeratingExtras.m in Sources */,
+				26DDD2B91C4791DA00D21F83 /* ICDURLUtils.m in Sources */,
+				26DDD2AE1C4791DA00D21F83 /* ICDErrorConstants.m in Sources */,
+				26DDD2B51C4791DA00D21F83 /* ICDDeviceUtils.m in Sources */,
+				26DDD2AF1C4791DA00D21F83 /* ICDNotificationConstants.m in Sources */,
+				26DDD2B81C4791DA00D21F83 /* ICDStringUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +527,7 @@
 			baseConfigurationReference = E1E981FA4FAD8881A345A794 /* Pods-ICDNetworkingDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ICDNetworkingDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = ICDNetworkingDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -350,6 +541,7 @@
 			baseConfigurationReference = B3E76156D328A4D1CF487BCD /* Pods-ICDNetworkingDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ICDNetworkingDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = ICDNetworkingDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
