@@ -17,11 +17,11 @@
 @end
 
 @implementation ICDDemoViewModel
+@dynamic model;
 
 - (instancetype)initWithModel:(SocialTopic *)model {
-    self = [super init];
+    self = [super initWithModel:model];
     if (self) {
-        _model = model;
         //使用ReactiveCocoa进行数据绑定，当model被修改时，viewModel跟随响应，同时View更新
         RAC(self, avatorUrl) = RACObserve(self.model, publishUser.portraitUrl);
         RAC(self, name) = RACObserve(self.model, publishUser.nickname);
@@ -45,15 +45,6 @@
 //        _images = self.model.photoUrls;
     }
     return self;
-}
-
-+ (NSArray *)viewModelsFromModels:(NSArray *)models {
-    NSMutableArray *mubtablArray = [NSMutableArray new];
-    [models enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        ICDDemoViewModel *viewmodel = [[ICDDemoViewModel alloc] initWithModel:obj];
-        [mubtablArray addObject:viewmodel];
-    }];
-    return [mubtablArray copy];
 }
 
 @end

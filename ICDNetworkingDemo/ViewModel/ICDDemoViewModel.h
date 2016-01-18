@@ -6,10 +6,10 @@
 //  Copyright © 2016年 wenky. All rights reserved.
 //
 
-#import <ReactiveViewModel/ReactiveViewModel.h>
+#import "ICDBaseViewModel.h"
 @class SocialTopic;
 
-@interface ICDDemoViewModel : NSObject
+@interface ICDDemoViewModel : ICDBaseViewModel
 @property (nonatomic, copy) NSString *avatorUrl;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *location;
@@ -19,8 +19,5 @@
 @property (nonatomic, copy) NSArray *images; // url或者UIImage
 
 - (instancetype)initWithModel:(SocialTopic *)model;
-
-// Model数组转换为ViewModel数组
-+ (NSArray *)viewModelsFromModels:(NSArray *)models;
 
 @end

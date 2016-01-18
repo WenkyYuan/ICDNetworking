@@ -41,6 +41,7 @@
 		26DDD2E11C47941200D21F83 /* ICDDemoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2D41C47941200D21F83 /* ICDDemoViewModel.m */; };
 		26DDD2E51C479B4800D21F83 /* ICDServerAPIResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2E41C479B4800D21F83 /* ICDServerAPIResponse.m */; };
 		26DDD2E81C479CC800D21F83 /* ICDBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD2E71C479CC800D21F83 /* ICDBaseRequest.m */; };
+		26DDD3081C4CDBA200D21F83 /* ICDBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DDD3071C4CDBA200D21F83 /* ICDBaseViewModel.m */; };
 		FD4F33242B53F9F290562D1A /* libPods-ICDNetworkingDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D634D35696516AD0D7C5D6E /* libPods-ICDNetworkingDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +110,8 @@
 		26DDD2E41C479B4800D21F83 /* ICDServerAPIResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDServerAPIResponse.m; sourceTree = "<group>"; };
 		26DDD2E61C479CC800D21F83 /* ICDBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDBaseRequest.h; sourceTree = "<group>"; };
 		26DDD2E71C479CC800D21F83 /* ICDBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDBaseRequest.m; sourceTree = "<group>"; };
+		26DDD3061C4CDBA200D21F83 /* ICDBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDBaseViewModel.h; sourceTree = "<group>"; };
+		26DDD3071C4CDBA200D21F83 /* ICDBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDBaseViewModel.m; sourceTree = "<group>"; };
 		2D634D35696516AD0D7C5D6E /* libPods-ICDNetworkingDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ICDNetworkingDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E76156D328A4D1CF487BCD /* Pods-ICDNetworkingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICDNetworkingDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ICDNetworkingDemo/Pods-ICDNetworkingDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E1E981FA4FAD8881A345A794 /* Pods-ICDNetworkingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICDNetworkingDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ICDNetworkingDemo/Pods-ICDNetworkingDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -311,6 +314,8 @@
 		26DDD2D21C47941200D21F83 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				26DDD3061C4CDBA200D21F83 /* ICDBaseViewModel.h */,
+				26DDD3071C4CDBA200D21F83 /* ICDBaseViewModel.m */,
 				26DDD2D31C47941200D21F83 /* ICDDemoViewModel.h */,
 				26DDD2D41C47941200D21F83 /* ICDDemoViewModel.m */,
 			);
@@ -495,6 +500,7 @@
 				26DDD2B51C4791DA00D21F83 /* ICDDeviceUtils.m in Sources */,
 				26DDD2D51C47941200D21F83 /* SocialTopic.m in Sources */,
 				26DDD2AF1C4791DA00D21F83 /* ICDNotificationConstants.m in Sources */,
+				26DDD3081C4CDBA200D21F83 /* ICDBaseViewModel.m in Sources */,
 				26DDD2B81C4791DA00D21F83 /* ICDStringUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
