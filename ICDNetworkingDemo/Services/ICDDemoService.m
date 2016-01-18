@@ -12,11 +12,29 @@
 
 @implementation ICDDemoService
 
-+ (void)queryTopicsByScope:(NSUInteger)scope offset:(NSUInteger)offset limit:(NSUInteger)limit completion:(QuerySocialTopicsCompletionBlock)completion {
-    [self queryTopicsByScope:scope offset:offset limit:limit ignoreCache:NO completion:completion];
++ (instancetype)sharedManager {
+    static id instance;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [[self alloc] initPrivate];
+    });
+    return instance;
 }
 
-+ (void)queryTopicsByScope:(NSUInteger)scope offset:(NSUInteger)offset limit:(NSUInteger)limit ignoreCache:(BOOL)ignoreCache completion:(QuerySocialTopicsCompletionBlock)completion {
+- (instancetype)init {
+    @throw [NSException exceptionWithName:@"IllegalAccessExcetpion" reason:@"Use `+ (instancetype)sharedManager` instead" userInfo:nil];
+}
+
+- (instancetype)initPrivate {
+    self = [super init];
+    return self;
+}
+
+- (void)queryTopicsByScope:(NSUInteger)scope offset:(NSUInteger)offset limit:(NSUInteger)limit completion:(QuerySocialTopicsCompletionBlock)completion {
+    return  [self queryTopicsByScope:scope offset:offset limit:limit ignoreCache:NO completion:completion];
+}
+
+- (void)queryTopicsByScope:(NSUInteger)scope offset:(NSUInteger)offset limit:(NSUInteger)limit ignoreCache:(BOOL)ignoreCache completion:(QuerySocialTopicsCompletionBlock)completion {
     
     ICDDemoAPI *api = [[ICDDemoAPI alloc] initWithScope:scope offset:offset limit:limit];
     
@@ -37,6 +55,7 @@
     }
     
     [api doRequestWithCompletion:convertDataToModelBlock];
+    [self.allServices addObject:api.dataTask];
 }
 
 @end

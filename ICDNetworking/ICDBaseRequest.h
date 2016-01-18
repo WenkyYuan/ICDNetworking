@@ -16,6 +16,9 @@ typedef NS_ENUM(NSUInteger, ICDRequestMethod) {
 
 @interface ICDBaseRequest : NSObject
 
+@property (nonatomic, strong) NSURLSessionDataTask *dataTask;
+@property (nonatomic, copy) ICDServerAPICompletion completionBlock;
+
 //开始请求网络
 - (void)doRequestWithCompletion:(ICDServerAPICompletion)completion;
 

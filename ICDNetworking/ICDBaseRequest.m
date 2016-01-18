@@ -14,10 +14,6 @@
 
 //以下方法由子类覆盖实现：
 
-- (void)doRequestWithCompletion:(ICDServerAPICompletion)completion {
-    [ICDServerAPIUtils doRequest:self completion:completion];
-}
-
 - (NSString *)requestURI {
     return @"";
 }
@@ -40,6 +36,11 @@
 }
 
 #pragma mark - publich method
+- (void)doRequestWithCompletion:(ICDServerAPICompletion)completion {
+    self.dataTask = [ICDServerAPIUtils doRequest:self completion:completion];
+    self.completionBlock = completion;
+}
+
 - (ICDServerAPIResponse *)cacheResponse {
     NSString *responseJson = [[ICDURLCacheDAO sharedManager] urlCacheResponseJson];
     return [ICDServerAPIResponse mj_objectWithKeyValues:responseJson];

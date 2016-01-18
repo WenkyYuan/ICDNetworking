@@ -88,7 +88,7 @@
 }
 
 - (void)setupData {
-    [ICDDemoService queryTopicsByScope:1 offset:0 limit:10 completion:^(NSArray *topics, NSError *error) {
+    [[ICDDemoService sharedManager] queryTopicsByScope:1 offset:0 limit:10 completion:^(NSArray *topics, NSError *error) {
         NSLog(@"处理数据成功！");
         if (error) {
             return;
