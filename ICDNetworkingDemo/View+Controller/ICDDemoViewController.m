@@ -28,6 +28,8 @@
 @implementation ICDDemoViewController
 - (void)dealloc {
     NSLog(@"ICDDemoViewController被注销了");
+    //controller被注销时要取消所有网络请求
+    [[ICDDemoService sharedManager] removeAllServices];
 }
 
 - (void)viewDidLoad {
