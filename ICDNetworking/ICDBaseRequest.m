@@ -42,7 +42,7 @@
 }
 
 - (ICDServerAPIResponse *)cacheResponse {
-    NSString *responseJson = [[ICDURLCacheDAO sharedManager] urlCacheResponseJson];
+    NSString *responseJson = [[ICDURLCacheDAO sharedManager] urlCacheResponseJsonForRequest:self];
     return [ICDServerAPIResponse mj_objectWithKeyValues:responseJson];
 }
 

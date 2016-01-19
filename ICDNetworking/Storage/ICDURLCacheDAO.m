@@ -12,10 +12,6 @@
 #import "ICDAPPConstants.h"
 #import "ICDBaseRequest.h"
 
-@interface ICDURLCacheDAO ()
-@property (nonatomic, strong) ICDBaseRequest *request;
-@end
-
 @implementation ICDURLCacheDAO
 
 + (instancetype)sharedManager {
@@ -36,9 +32,9 @@
     return self;
 }
 
-- (NSString *)urlCacheResponseJson {
+- (NSString *)urlCacheResponseJsonForRequest:(ICDBaseRequest *)request {
     NSString *cacheJson;
-    NSString *path = [self cacheFilePath];
+    NSString *path = [self cacheFilePath:request];
     NSFileManager *fileManager = [NSFileManager defaultManager];
     if ([fileManager fileExistsAtPath:path isDirectory:nil] == YES) {
         cacheJson = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
@@ -47,8 +43,7 @@
 }
 
 - (void)storeUrlCacheResponseJson:(NSString *)responseJson forRequest:(ICDBaseRequest *)request {
-    self.request = request;
-    [NSKeyedArchiver archiveRootObject:responseJson toFile:[self cacheFilePath]];
+    [NSKeyedArchiver archiveRootObject:responseJson toFile:[self cacheFilePath:request]];
 }
 
 - (void)checkDirectory:(NSString *)path {
@@ -83,12 +78,12 @@
     return path;
 }
 
-- (NSString *)cacheFileName {
-    NSString *requestURI= self.request.requestURI;
+- (NSString *)cacheFileName:(ICDBaseRequest *)request {
+    NSString *requestURI= request.requestURI;
     NSString *baseUrl = kICDServerBaseURL;
-    NSString *requestJson = self.request.requestJson;
+    NSString *requestJson = request.requestJson;
     NSString *requestMethod;
-    if (self.request.requestMethod == ICDRequestMethodGET) {
+    if (request.requestMethod == ICDRequestMethodGET) {
         requestMethod = @"GET";
     } else {
         requestMethod = @"POST";
@@ -100,8 +95,8 @@
     return cacheFileName;
 }
 
-- (NSString *)cacheFilePath {
-    NSString *cacheFileName = [self cacheFileName];
+- (NSString *)cacheFilePath:(ICDBaseRequest *)request {
+    NSString *cacheFileName = [self cacheFileName:request];
     NSString *path = [self cacheBasePath];
     path = [path stringByAppendingPathComponent:cacheFileName];
     return path;

@@ -15,7 +15,7 @@
 
 + (instancetype)sharedManager;
 
-- (NSString *)urlCacheResponseJson;
+- (NSString *)urlCacheResponseJsonForRequest:(ICDBaseRequest *)request;
 
 - (void)storeUrlCacheResponseJson:(NSString *)responseJson forRequest:(ICDBaseRequest *)request;
 
