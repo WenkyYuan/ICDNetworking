@@ -34,18 +34,33 @@
 
 - (NSString *)urlCacheResponseJsonForRequest:(ICDBaseRequest *)request {
     NSString *cacheJson;
+    NSDate *storeDate;
     NSString *path = [self cacheFilePath:request];
     NSFileManager *fileManager = [NSFileManager defaultManager];
     if ([fileManager fileExistsAtPath:path isDirectory:nil] == YES) {
-        cacheJson = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+        id dic = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+        if ([dic isKindOfClass:[NSString class]]) {
+            return nil;
+        }
+        if ([dic isKindOfClass:[NSDictionary class]]) {
+            cacheJson = dic[@"responseJson"];
+            storeDate = dic[@"storeDate"];
+        }
     }
-    return cacheJson;
+    if ([self isValidCacheOfRequest:request storeDate:storeDate]) {
+        return cacheJson;
+    }
+    return nil;
 }
 
 - (void)storeUrlCacheResponseJson:(NSString *)responseJson forRequest:(ICDBaseRequest *)request {
-    [NSKeyedArchiver archiveRootObject:responseJson toFile:[self cacheFilePath:request]];
+    NSDictionary *dic = @{@"responseJson":responseJson,
+                          @"storeDate":[NSDate date]
+                          };
+    [NSKeyedArchiver archiveRootObject:dic toFile:[self cacheFilePath:request]];
 }
 
+#pragma mark - private methods
 - (void)checkDirectory:(NSString *)path {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     BOOL isDir;
@@ -100,6 +115,16 @@
     NSString *path = [self cacheBasePath];
     path = [path stringByAppendingPathComponent:cacheFileName];
     return path;
+}
+
+- (BOOL)isValidCacheOfRequest:(ICDBaseRequest *)request storeDate:(NSDate *)storeDate {
+    NSDate *now = [NSDate date];
+    NSDate *invalidDate = [NSDate dateWithTimeInterval:request.cacheValidTime sinceDate:storeDate];
+    if ([[now laterDate:storeDate] isEqualToDate:now]
+        && [[now laterDate:invalidDate] isEqualToDate:invalidDate]) {
+        return YES;
+    }
+    return NO;
 }
 
 @end

@@ -35,6 +35,10 @@
     return NO;
 }
 
+- (NSTimeInterval)cacheValidTime {
+    return 60;
+}
+
 #pragma mark - publich method
 - (void)doRequestWithCompletion:(ICDServerAPICompletion)completion {
     self.dataTask = [ICDServerAPIUtils doRequest:self completion:completion];

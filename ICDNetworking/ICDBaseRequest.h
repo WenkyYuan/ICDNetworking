@@ -51,4 +51,7 @@ typedef NS_ENUM(NSUInteger, ICDRequestMethod) {
 //是否开启URL缓存,默认为NO不开启
 - (BOOL)openCache;
 
+//URL缓存有效时间,默认60s
+- (NSTimeInterval)cacheValidTime;
+
 @end
