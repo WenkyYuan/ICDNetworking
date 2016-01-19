@@ -48,13 +48,13 @@
         }
     };
     
-    
     if (!ignoreCache && api.cacheResponse) {
         //先从缓存中读取一次数据，再从网络请求一次
         convertDataToModelBlock(api.cacheResponse);
+        [api doRequestWithCompletion:nil];
+    } else {
+        [api doRequestWithCompletion:convertDataToModelBlock];
     }
-    
-    [api doRequestWithCompletion:convertDataToModelBlock];
     [self.allServices addObject:api.dataTask];
 }
 
